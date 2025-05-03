@@ -10,12 +10,11 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
   },
 };
-Modal.setAppElement('#yourAppElement');
+Modal.setAppElement('#root');
 export const ImageModal = ({ modalIsOpen, closeModal, alt, src }) => {
   return (
     <Modal
       isOpen={modalIsOpen}
-      onAfterOpen={afterOpenModal}
       onRequestClose={closeModal}
       style={customStyles}
     >
